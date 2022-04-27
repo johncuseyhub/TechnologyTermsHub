@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+var fs = require('fs');
 
 const app = express();
 
@@ -17,3 +18,28 @@ app.get('/', (request, response) => {
 app.listen( port, ()=> {
     console.log(`Express server listening on port ${port} !`);
 });
+
+
+try {
+    // read contents of the file
+    const data = fs.readFileSync('./static/index.html');
+
+    const fileContent = data.toString();
+
+     //console.log(fileContent);
+
+    // split the contents by new line
+    const lines = fileContent.split(/\r?\n/);
+
+    // print all lines
+    lines.forEach((line) => {
+        if(line.indexOf('id="tableButtons"') >= 0){
+        console.log(line);
+        }
+    });
+
+} catch (err) {
+    console.error(err);
+}
+
+  

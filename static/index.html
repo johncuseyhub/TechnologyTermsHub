@@ -10,6 +10,25 @@
 				$('#example').DataTable();
 			} );
 		</script>
+		
+		  <style>
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 12px;
+            width: 100%;
+            table-layout:fixed;
+        }
+  
+        td {
+            text-align: Left;
+            padding: 10px;
+        }
+  
+        tr:nth-child(even) {
+            background-color: green;
+        }
+    </style>
 
     </head>
 
@@ -18,59 +37,38 @@
 <table id="example" class="display" style="width:100%">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
+                <th>Catalog</th>
+                <th>Term</th>
+                <th>Abbreviation</th>
+                <th>Definition</th>
+                <th>Links</th>
+				<th>Image</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Tiger Nixon</td>
-                <td>System Architect</td>
-                <td>Edinburgh</td>
-                <td>61</td>
-                <td>2011/04/25</td>
-                <td>$320,800</td>
+                <td>General</td>
+                <td>Application Programming Interface</td>
+                <td>API</td>
+                <td>An API is a software go-between that brings information from one application to another. It allows applications to communicate with one another while preserving some security measures for each end point. For example, an API can be used to securely transfer data stored by your web browser to a mobile app.</td>
+                <td></td>
+				<td></td>
             </tr>
-            <tr>
-                <td>Garrett Winters</td>
-                <td>Accountant</td>
-                <td>Tokyo</td>
-                <td>63</td>
-                <td>2011/07/25</td>
-                <td>$170,750</td>
-            </tr>
-            <tr>
-                <td>Ashton Cox</td>
-                <td>Junior Technical Author</td>
-                <td>San Francisco</td>
-                <td>66</td>
-                <td>2009/01/12</td>
-                <td>$86,000</td>
-            </tr>
-            <tr>
-                <td>Cedric Kelly</td>
-                <td>Senior Javascript Developer</td>
-                <td>Edinburgh</td>
-                <td>22</td>
-                <td>2012/03/29</td>
-                <td>$433,060</td>
-            </tr>
+ 
         </tbody>
         <tfoot>
             <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
+                <th>Catalog</th>
+                <th>Term</th>
+                <th>Abbreviation</th>
+                <th>Definition</th>
+                <th>Links</th>
+				<th>Image</th>
             </tr>
         </tfoot>
     </table>
   
     </body>
 </html>
+
+<span id="tableButtons"></span>
